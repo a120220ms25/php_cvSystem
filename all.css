@@ -7,7 +7,7 @@
   font-family: 'Lacquer', cursive;
 }
 .login-bg{
-  background-image: url('/images/bg03.jpg');
+  background-image: url('./images/bg03.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
