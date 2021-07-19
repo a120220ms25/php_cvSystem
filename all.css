@@ -1,0 +1,78 @@
+
+/* loginpage */
+.body{
+  font-family: 'Ubuntu', sans-serif;
+}
+.title{
+  font-family: 'Lacquer', cursive;
+}
+.login-bg{
+  background-image: url('/images/bg03.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+button.btn{
+  background: linear-gradient(to right, #e53935, #e35d5b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+.signup{
+  float: right;
+}
+.signup a {
+  text-decoration: none;
+  color:#e53935
+}
+.content-block{
+  position: relative;
+  background:linear-gradient(to left, #e53935,  #e35d5b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+
+}
+.content-block-text{
+  width: 80%;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Lacquer', cursive;
+
+}
+/* .wrap-content{
+  font-family: 'Lacquer', cursive;
+ 
+} */
+.bg-filter{
+  backdrop-filter: contrast(60%);
+
+}
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #e35d5b !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #e35d5b69 !important;
+}
+.btn-check:focus+.btn, .btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #fa949288 !important;
+}
+.content-block{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+}
+.content-login{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+@media screen and (max-width:768px){
+  .content-login{
+    border-radius: 10px;
+  }
+ 
+}
+
+
