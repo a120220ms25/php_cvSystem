@@ -5,7 +5,7 @@ date_default_timezone_set("Asia/Taipei");
 
 
 class DB{
-  private $dsn="mysql:host=localhost;charset=utf8;dbname=db01";
+  private $dsn="mysql:host=localhost;charset=utf8;dbname=db_cv";
   private $root='root';
   private $password='';
   private $table;
@@ -161,7 +161,7 @@ function to($url){
 }
 
 
-$Member = new DB("member");
+
 $About = new DB("about");
 $Skills = new DB("skill");
 $Project = new DB("project");
