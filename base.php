@@ -3,7 +3,7 @@ session_start();
 date_default_timezone_set("Asia/Taipei");
 
 
-$ts=['photo'=>"主要照片管理",
+$ts=['photo'=>"照片管理",
      
       'admin'=>"管理者帳號管理",
       'menu'=>"選單管理"];
@@ -176,12 +176,13 @@ function to($url){
 }
 
 
-
+$Member = new DB("member");
 $About = new DB("about");
 $Photo = new DB("photo");
 $Skills = new DB("skill");
 $Project = new DB("project");
 $Work = new DB("work");
 $Education = new DB("education");
+
 
 ?>

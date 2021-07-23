@@ -1,5 +1,16 @@
 body{
-  background-color: #54ca95;
+  background-color: #1489cc2c;
+  font-family: 'Otomanopee One', sans-serif,'M PLUS Rounded 1c';
+}
+.content {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+a.nav-link:hover{
+  color: #fff !important;
+}
+h1.title{
+  background-color: #1488cc;
+  color: white;
 }
 .wrap{
   background-color: #fff;
@@ -7,12 +18,68 @@ body{
 ul li{
   list-style: none;
 }
-.aside a{
-  text-decoration: none;
-  display: block;
-  width: 100%;
-  background-color: aqua;
+
+/* header navbar */
+.logoutBtn{
+  /* background-color: #1488cc ; */
+  border: 1px solid #1488cc;
+  color: #1488cc;
 }
-.aside a:hover{
-  background-color: peru;
+.logoutBtn:hover{
+  background-color:#1488cc ;
+  border: none;
+  color:  #fff;
 }
+.printBtn{
+  background-color: #fff ;
+  border: none;
+  color: #1488cc;
+}
+.printBtn:hover{
+  background-color:#1488cc ;
+  border: none;
+  color:  #fff;
+}
+.t{
+  border-bottom: 4px double #1488cc;
+
+}
+.btn-group{
+  float: right;
+}
+table tr th {
+  font-size: 14px;
+}
+
+.titleString{
+  position:relative;
+
+}
+.color01{
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  display: inline-block;
+  width: 70px;
+  height: 40px;
+  background-color: #1489cc38;
+  clip-path: polygon(100% 23%, 100% 50%, 24% 100%, 0 48%);
+}
+.form-btns td{
+  border:none;
+}
+.basicBtn{
+  font-size: 12px;
+ background-color:#1488cc ;
+  border: none;
+  color:  #fff;
+}
+
+
+
+/* 
+#fa949288
+#e35d5b
+#e53935 
+#1488cc
+#2b32b2 */

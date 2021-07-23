@@ -76,7 +76,7 @@
                     </div>
                     <div class="mb-4">
                       <label for="exampleInputPassword1" class="form-label">Password</label>
-                      <input name="password" type="password" class="form-control" id="exampleInputPassword1">
+                      <input name="password" type="password" class="form-control w-100" id="exampleInputPassword1">
                     </div>
                     <input type="submit" value="SIGNUP" class="btn w-100">
                     <input type="hidden" name="member" value="signup">

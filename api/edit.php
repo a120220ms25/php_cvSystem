@@ -12,12 +12,15 @@ foreach ($ids as $key => $id) {
      $row=$Photo->find($id);
 
     // 如果sh有值且和id一樣 則要顯示
-    if(isset($_POST['sh'])&& $_POST['sh']==$id){
-        $row['sh'] = 1;
-      }else{
-        $row['sh'] = 0;
-      }
-      $Photo->save($row);
+     $row['sh']=(isset($_POST['sh']) && $_POST['sh']== $id ) ? 1 : 0;
+     $Photo->save($row);
+     
+    // if(isset($_POST['sh'])&& $_POST['sh']==$id){
+    //     $row['sh'] = 1;
+    //   }else{
+    //     $row['sh'] = 0;
+    //   }
+   
   }
  
 }

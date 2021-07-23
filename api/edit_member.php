@@ -40,7 +40,8 @@ if($member =='signup'){
 }else{
   foreach ($memberArr  as $key => $value) {
     if ($value['account'] == $account && $value['password'] == $password ) {
-      echo "<script>alert('登入成功，歡迎使用履歷表生成系統!'); location.href = '../backend.php';</script>";
+      $_SESSION['account']=$account;
+      echo "<script>alert('登入成功，歡迎使用履歷表系統!'); location.href = '../backend.php';</script>";
     } 
   }
   echo "<script>alert('帳號或密碼錯誤，請重新登入!');location.href = '../index.php';</script>";

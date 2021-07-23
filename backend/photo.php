@@ -1,21 +1,27 @@
-<div style="width:99%; height:87%; margin:auto; overflow:auto; border:#666 1px solid;">
-  <p class="t cent botli"><?=$ts[$do]?></p>
-  <hr>
-  <form method="post" action="./api/edit.php">
-    <table class="w-100 border border-info">
-      <tbody>
+<div style="width:99%;  margin:auto; overflow:auto; class="p-4">
+<div class="container d-flex px-5 py-2">
+<p class="col-lg-2 titleString fs-6 p-3 fw-bold mb-0"><?=$ts[$do]?>
+    <span class="color01"></span>
+  </p>
+  <form class="col-lg-10 method="post" action="./api/edit.php">
+    <table class="w-100 table cent auto ">
+      <thead>
         <tr>
-          <td>大頭照</td>
-          <td >使用此照片</td>
-          <td>刪除</td>  
+          <th>大頭照</th>
+          <th>使用此照片</th>
+          <th>刪除</th>  
         </tr>
-          <?php
+      </thead>
+      <tbody>
+        <div class="table-title">
+        <?php
           $rows=$Photo->all();
           foreach($rows as $key=> $value){
             ?>
+        </div>
             <tr>
               <td>
-                <img src="img/<?=$value['photo'];?>" style="width:150px;height:150px" alt="">
+                <img src="img/<?=$value['photo'];?>" style="width:100px;height:100px" alt="">
               </td>
               <td>
                 <input type="radio" name="sh" value="<?=$value['id'];?>" <?=$value['sh']==1?"checked":""?>>
@@ -28,20 +34,27 @@
           <?php
             }
           ?>
-      </tbody>
-    </table>
-    <table>
+     </tbody>
       <tbody>
-        <tr>
-          <td width="200px"><input type="button"
+        <tr class="form-btns">
+          <td width="200px">
+            <input class="basicBtn" type="button"
           onclick="op(&#39;#cover&#39;,&#39;#cvr&#39;,&#39;modal/<?=$do;?>.php&#39;)" 
               value="<?=$as[$do]?>" >
           </td>
-          <td class="cent"><input type="submit" value="修改確定"><input type="reset" value="重置"></td>
+          <td class="btn-group">
+            <input class="basicBtn"  type="submit" value="修改確定">
+            <input class="basicBtn" type="reset" value="重置">
+          </td>
         </tr>
       </tbody>
     </table>
-
   </form>
+
 </div>
+
 </div>
+
+
+
+  
