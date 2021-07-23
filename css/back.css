@@ -1,0 +1,18 @@
+body{
+  background-color: #54ca95;
+}
+.wrap{
+  background-color: #fff;
+}
+ul li{
+  list-style: none;
+}
+.aside a{
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  background-color: aqua;
+}
+.aside a:hover{
+  background-color: peru;
+}

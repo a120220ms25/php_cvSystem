@@ -3,6 +3,21 @@ session_start();
 date_default_timezone_set("Asia/Taipei");
 
 
+$ts=['photo'=>"主要照片管理",
+     
+      'admin'=>"管理者帳號管理",
+      'menu'=>"選單管理"];
+
+$as=['photo'=>"新增照片",
+
+'admin'=>"管理者帳號管理",
+'menu'=>"選單管理"];
+
+$hs=['photo'=>"請選擇要上傳的照片",
+
+'admin'=>"管理者帳號管理",
+'menu'=>"選單管理"];
+
 
 class DB{
   private $dsn="mysql:host=localhost;charset=utf8;dbname=db_cv";
@@ -163,6 +178,7 @@ function to($url){
 
 
 $About = new DB("about");
+$Photo = new DB("photo");
 $Skills = new DB("skill");
 $Project = new DB("project");
 $Work = new DB("work");
