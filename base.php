@@ -3,20 +3,24 @@ session_start();
 date_default_timezone_set("Asia/Taipei");
 
 
-$ts=['photo'=>"照片管理",
+$ts=['photo'=>"關於我 照片",
+     'about'=>"關於我 姓名",
+     'introduction'=>"關於我 介紹",
+     'contact'=>"關於我 聯絡",
      
-      'admin'=>"管理者帳號管理",
-      'menu'=>"選單管理"];
+     'menu'=>"選單管理"];
 
 $as=['photo'=>"新增照片",
+      'add'=>"新增一筆",
+     'introduction'=>"新增自我介紹",
+     'contact'=>"新增聯絡方式",
+      
+     'menu'=>"選單管理"];
 
-'admin'=>"管理者帳號管理",
-'menu'=>"選單管理"];
+$hs=['photo'=>"請選擇照片",
 
-$hs=['photo'=>"請選擇要上傳的照片",
-
-'admin'=>"管理者帳號管理",
-'menu'=>"選單管理"];
+      'admin'=>"管理者帳號管理",
+      'menu'=>"選單管理"];
 
 
 class DB{
@@ -183,6 +187,8 @@ $Skills = new DB("skill");
 $Project = new DB("project");
 $Work = new DB("work");
 $Education = new DB("education");
+$Introduction = new DB("introduction");
+$Contact = new DB("contact");
 
 
 ?>

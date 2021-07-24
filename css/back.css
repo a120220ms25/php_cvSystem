@@ -1,10 +1,11 @@
 body{
   background-color: #1489cc2c;
-  font-family: 'Otomanopee One', sans-serif,'M PLUS Rounded 1c';
+  font-family: 'Otomanopee One', sans-serif;
 }
-.content {
-  font-family: 'M PLUS Rounded 1c', sans-serif;
+form {
+  font-family: 'Overpass', sans-serif;
 }
+
 a.nav-link:hover{
   color: #fff !important;
 }
@@ -53,6 +54,8 @@ table tr th {
 
 .titleString{
   position:relative;
+  font-family: 'Noto Sans JP', sans-serif;
+ 
 
 }
 .color01{
@@ -70,11 +73,32 @@ table tr th {
 }
 .basicBtn{
   font-size: 12px;
- background-color:#1488cc ;
+  background-color:#1488cc ;
   border: none;
   color:  #fff;
 }
+.addBtn{
+  float: left;
+}
+.form-btns{
+  position: relative;
+}
+.btn-group{
+  position: absolute;
+  right: 0%;
+  
+}
+.checkBtn{
+  background-color: #e35d5b;
+}
 
+a.nav-link{
+display: block !important;
+padding: 0 10px;
+}
+.nav-item{
+  padding: 5px;
+}
 
 
 /* 

@@ -11,7 +11,7 @@ body
 	width:100%;
 	height:100%;
 	position:fixed;
-	z-index:5;
+	z-index:9999;
 	background:rgba(51,51,51,0.4);
 	top:0px;
 	left:0px;
@@ -27,7 +27,7 @@ body
 	position:absolute;
 	z-index:5;
 	background:#ffffff;
-	top:0px;
+	top:60px;
 	left:0px;
 	right:0px;
 	bottom:0px;
@@ -139,15 +139,15 @@ input:active,button:active
 }
 input[type=text],input[type=password]
 {
-	width:150px;
+	width:250px;
 }
 input:focus,button:focus
 {
 	box-shadow:#09C 0px 0px 3px .3px;
 }
-.yel td
+.blue td
 {
-	background:#F3DA49;
+	/* background:#fce4a8; */
 	text-align:center;
 }
 .trce td
@@ -163,4 +163,7 @@ input:focus,button:focus
 
 .auto{
 	margin: 0 auto;
+}
+.wrap{
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }

@@ -1,27 +1,31 @@
 <div style="width:99%;  margin:auto; overflow:auto; class="p-4">
-   <div class="container d-flex px-5 py-2">
-      <p class="col-lg-2 titleString fs-6 p-3 fw-bold mb-0"><?=$ts[$do]?>
-          <span class="color01"></span>
-      </p>
-        <form class="col-lg-10" method="post" action="api/edit.php">
+<div class="container d-flex flex-wrap px-5 py-2">
+<p class="col-lg-2 titleString fs-6 p-3 fw-bold mb-0"><?=$ts[$do]?>
+    <span class="color01"></span>
+</p>
+<form class="col-lg-10" method="post" action="api/edit.php">
           <table class="w-100 table cent auto ">
             <thead>
               <tr>
-                <th >大頭照</th>
-                <th >顯示</th>
-                <th >刪除</th>  
+                <th>標題</th>
+                <th>內容</th>
+                <th>顯示</th>
+                <th>刪除</th>  
               </tr>
             </thead>
             <tbody>
               <div class="table-title">
               <?php
-                $rows=$Photo->all();
+                $rows=$Contact->all();
                 foreach($rows as $key=> $value){
                   ?>
               </div>
                   <tr>
                     <td>
-                      <img src="img/<?=$value['photo'];?>" style="width:100px;height:100px" alt="">
+                    <input class="w-100" type="text" name='text[]' value="<?=$value['title'];?>">
+                    </td>
+                    <td>
+                    <input  class="w-75" type="text" name='text[]' value="<?=$value['content'];?>">
                     </td>
                     <td>
                       <input type="radio" name="sh" value="<?=$value['id'];?>" <?=$value['sh']==1?"checked":"";?>>
@@ -49,7 +53,10 @@
             </tbody>
           </table>
         </form>
-   </div>
+  
+
+</div>
+
 </div>
 
 

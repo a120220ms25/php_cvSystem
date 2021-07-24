@@ -7,21 +7,21 @@
           <table class="w-100 table cent auto ">
             <thead>
               <tr>
-                <th >大頭照</th>
-                <th >顯示</th>
-                <th >刪除</th>  
+                <th>自我介紹</th>
+                <th>顯示</th>
+                <th>刪除</th>  
               </tr>
             </thead>
             <tbody>
               <div class="table-title">
               <?php
-                $rows=$Photo->all();
+                $rows=$Introduction->all();
                 foreach($rows as $key=> $value){
                   ?>
               </div>
                   <tr>
                     <td>
-                      <img src="img/<?=$value['photo'];?>" style="width:100px;height:100px" alt="">
+                     <textarea name="introduction" id="" cols="30" rows="5"><?=$value['content']?></textarea>
                     </td>
                     <td>
                       <input type="radio" name="sh" value="<?=$value['id'];?>" <?=$value['sh']==1?"checked":"";?>>
