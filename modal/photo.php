@@ -13,7 +13,7 @@
 <div class="cent">
     <input  class="fs-6"  type="submit" value="新增">
     <input  class="fs-6"  type="reset" value="重置">
-    <input type="hidden" name="table" value="admin">
+    <input type="hidden" name="table" value="photo">
 </div>
 </form>
 

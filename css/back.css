@@ -5,13 +5,22 @@ body{
 form {
   font-family: 'Overpass', sans-serif;
 }
+header{
+  background-color: #faf;
+}
 
+a.nav-link{
+  text-align: center;
+  
+}
 a.nav-link:hover{
-  color: #fff !important;
+  background-color: #139be95b;
+
 }
 h1.title{
-  background-color: #1488cc;
-  color: white;
+  font-size: 24px;
+
+  
 }
 .wrap{
   background-color: #fff;
@@ -22,6 +31,7 @@ ul li{
 
 /* header navbar */
 .logoutBtn{
+  font-size: 10px;
   /* background-color: #1488cc ; */
   border: 1px solid #1488cc;
   color: #1488cc;
@@ -32,8 +42,9 @@ ul li{
   color:  #fff;
 }
 .printBtn{
+  border: 1px solid #1489ccab;
+  font-size: 10px;
   background-color: #fff ;
-  border: none;
   color: #1488cc;
 }
 .printBtn:hover{
@@ -79,6 +90,17 @@ table tr th {
 }
 .addBtn{
   float: left;
+}
+.memberinfo{
+border-bottom: 3px double #139be95b ;
+ 
+}
+.memberinfo-btn{
+ justify-content: end;
+}
+.btn{
+  padding: 4px;
+  margin: 0;
 }
 .form-btns{
   position: relative;

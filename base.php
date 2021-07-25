@@ -7,15 +7,19 @@ $ts=['photo'=>"關於我 照片",
      'about'=>"關於我 姓名",
      'introduction'=>"關於我 介紹",
      'contact'=>"關於我 聯絡",
-     
-     'menu'=>"選單管理"];
+     'skills'=>"技能管理",
+     'project'=>"作品管理",
+     'work'=>"工作經歷管理",
+     'education'=>"學歷管理"];
 
 $as=['photo'=>"新增照片",
       'add'=>"新增一筆",
      'introduction'=>"新增自我介紹",
      'contact'=>"新增聯絡方式",
-      
-     'menu'=>"選單管理"];
+     'skills'=>"新增技能欄位",
+     'project'=>"新增一個作品",
+     'work'=>"新增一筆工作經歷",
+     'education'=>"新增一筆學歷"];
 
 $hs=['photo'=>"請選擇照片",
 
@@ -183,7 +187,7 @@ function to($url){
 $Member = new DB("member");
 $About = new DB("about");
 $Photo = new DB("photo");
-$Skills = new DB("skill");
+$Skills = new DB("skills");
 $Project = new DB("project");
 $Work = new DB("work");
 $Education = new DB("education");

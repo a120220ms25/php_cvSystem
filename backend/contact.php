@@ -22,13 +22,13 @@
               </div>
                   <tr>
                     <td>
-                    <input class="w-100" type="text" name='text[]' value="<?=$value['title'];?>">
+                    <input class="w-100" type="text" name='title[]' value="<?=$value['title'];?>">
                     </td>
                     <td>
-                    <input  class="w-75" type="text" name='text[]' value="<?=$value['content'];?>">
+                    <input  class="w-75" type="text" name='content[]' value="<?=$value['content'];?>">
                     </td>
                     <td>
-                      <input type="radio" name="sh" value="<?=$value['id'];?>" <?=$value['sh']==1?"checked":"";?>>
+                      <input type="checkbox" name="sh[]" value="<?=$value['id'];?>" <?=$value['sh']==1?"checked":"";?>>
                     </td>
                     <td>
                       <input type="checkbox" name="del[]" value="<?=$value['id'];?>">
