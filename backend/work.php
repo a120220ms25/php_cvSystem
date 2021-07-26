@@ -7,10 +7,11 @@
           <table class="w-100 table cent auto ">
             <thead>
               <tr>
-                <th>公司名稱/任職時間</th>
+                <th style="width:30%" >公司名稱(職稱)</th>
+                <th style="width:30%">任職時間</th>
                 <th>職務內容</th>
-                <th>顯示</th>
-                <th>刪除</th>  
+                <th style="width:5%">顯示</th>
+                <th style="width:5%">刪除</th>  
               </tr>
             </thead>
             <tbody>
@@ -25,7 +26,10 @@
                     <input class="w-100" type="text" name='title[]' value="<?=$value['title'];?>">
                     </td>
                     <td>
-                      <textarea name="content[]" id="" cols="30" rows="3"><?=$value['content'];?></textarea>
+                    <input class="w-100" type="text" name='time[]' value="<?=$value['time'];?>">
+                    </td>
+                    <td>
+                      <textarea name="content[]" id="" cols="20" rows="3"><?=$value['content'];?></textarea>
                     </td>
                     <td>
                       <input type="checkbox" name="sh[]" value="<?=$value['id'];?>" <?=$value['sh']==1?"checked":"";?>>

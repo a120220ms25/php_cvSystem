@@ -21,10 +21,10 @@
               </div>
                   <tr>
                     <td>
-                     <textarea name="introduction[]" id="" cols="30" rows="5"><?=$value['content']?></textarea>
+                     <textarea name="introduction[]" id="" cols="50" rows="5"><?=$value['content']?></textarea>
                     </td>
                     <td>
-                      <input type="radio" name="sh" value="<?=$value['id'];?>" <?=$value['sh']==1?"checked":"";?>>
+                      <input type="checkbox" name="sh[]" value="<?=$value['id'];?>" <?=$value['sh']==1?"checked":"";?>>
                     </td>
                     <td>
                       <input type="checkbox" name="del[]" value="<?=$value['id'];?>">

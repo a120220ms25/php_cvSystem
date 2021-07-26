@@ -21,7 +21,14 @@
       <div class="row section p-3 mb-3">
         <div class="col-8 border border-info">
           <h1><?=$About->find(1)['name']?></h1>
-          <p><?=$Introduction->find(['sh'=>1])['content'];?></p>
+          <?php
+           $rows=$Introduction->all(['sh'=>1]);
+            foreach ($rows as $key => $value) {
+                ?>
+          <p><?=$value['content'];?></p>
+          <?php
+              }
+              ?>
           <ul>
             <?php
             $rows=$Contact->all(['sh'=>1]);
@@ -88,57 +95,78 @@
       <div class="row section p-3 mb-3">
         <div class="col-12">
           <h2>project</h2>
+          <?php
+            $rows=$Project->all(['sh'=>1]);
+            foreach ($rows as $key => $value) {
+                ?>
         </div>
         <div class="col-md-4 border border-success">
-          <h2>萬年曆系統</h2>
-          <p>規則您的任意地址以前預期運行正式分類正在發送什麼星座買了近。</p>
+       
+          <h2><?=$value['title']?></h2>
+          <p><?=$value['content']?></p>
         </div>
+
         <div class="col-md-8 border border-danger row m-0 ">
           <div class="col-6 p-0">
             <img class="w-100 border border-dark"
-              src="https://github.com/a120220ms25/pic/blob/master/bubble.jpg?raw=true" alt="">
+              src="img01/<?=$value['img01'];?>" alt="">
           </div>
           <div class="col-6 p-0">
             <img class="w-100 border border-dark"
-              src="https://github.com/a120220ms25/pic/blob/master/bubble.jpg?raw=true" alt="">
+              src="img02/<?=$value['img02'];?>" alt="">
           </div>
+          <?php
+              }
+              ?>
         </div>
       </div>
+      
       <!-- work experience-->
       <div class="row section p-3 mb-3">
         <div class="col-12 border border-info">
           <h2>work experience</h2>
+          <?php
+            $rows=$Work->all(['sh'=>1]);
+            foreach ($rows as $key => $value) {
+                ?>
         </div>
         <div class="col-12 work-list row p-0 m-0 border border-info">
-          <div class="col-2 year p-0 m-0 text-center">2011-2022</div>
+          <div class="col-2 year p-0 m-0 text-center"><?=$value['time']?></div>
           <div class="col-10 even ">
             <div class="data">
               <h6>
-                <div class="point"></div>DESIGN DIRECTOR
+                <div class="point"></div><?=$value['title']?>
               </h6>
-              <p class="p-2 m-0 border border-success">faccabo repudis apernate la cusam quate simus maionse quatur sunt
-                ad qui natet quunt am hicae maxim rem voluptatur</p>
+              <p class="p-2 m-0"><?=$value['content']?></p>
             </div>
+            <?php
+              }
+              ?>
           </div>
         </div>
-
       </div>
       <!-- education -->
       <div class="row section p-3 mb-3">
-        <div class="col-12 border border-success">
+        <div class="col-12 ">
           <h2>education</h2>
+          <?php
+            $rows=$Education->all(['sh'=>1]);
+            foreach ($rows as $key => $value) {
+                ?>
         </div>
-        <div class="col-12 education-list border border-danger">
-          <ul>
-            <li>
-              <div class="year">2021</div>
-              <div class="content">太山職訓</div>
-            </li>
-            <li>
-              <div class="year">2000</div>
-              <div class="content">中國文化大學</div>
-            </li>
-          </ul>
+        <div class="col-12  work-list row p-0 m-0 education-list border border-danger">
+        <div class="col-2 year p-0 m-0 text-center"><?=$value['content']?></div>
+          <div class="col-10 even">
+            <div class="data">
+              <h6>
+                <div class="point"></div><?=$value['title']?>
+              </h6>
+              <p class="p-3 m-0"></p>
+            </div>
+            <?php
+              }
+              ?>
+          </div>
         </div>
       </div>
     </div>

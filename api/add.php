@@ -55,8 +55,9 @@ switch($table){
 
   case 'work':
     $title=$_POST['title'];
+    $time=$_POST['time'];
     $content=$_POST['content'];
-    $Work->save(['title'=>$title,'content'=>$content]);
+    $Work->save(['title'=>$title,'content'=>$content,'time'=>$time]);
   break;
 
   case 'education':

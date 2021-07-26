@@ -6,8 +6,12 @@
 <form action="api/add.php" method="post" >
 <table style="margin:auto;">
     <tr>
-        <td class="fs-6" style="text-align:right">公司名稱/任職時間：</td>
+        <td class="fs-6" style="text-align:right">公司名稱(職稱)：</td>
         <td class="fs-6 " ><input type="text" name="title"></td>
+    </tr>
+    <tr>
+        <td class="fs-6" style="text-align:right">任職時間：</td>
+        <td class="fs-6 " ><input type="text" name="time"></td>
     </tr>
     <tr>
         <td class="fs-6" style="text-align:right">職務內容：</td>

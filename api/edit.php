@@ -24,7 +24,7 @@ foreach ($ids as $key => $id) {
       case 'introduction':
         // 如果sh有值且和id一樣 則要顯示 單選情況
          $row['content']=$_POST['introduction'][$key];
-         $row['sh']=(isset($_POST['sh']) && $_POST['sh']== $id ) ? 1 : 0;
+         $row['sh']=(isset($_POST['sh']) && in_array($id,$_POST['sh'])) ? 1 : 0;
       break;
 
       case 'contact':
@@ -46,6 +46,7 @@ foreach ($ids as $key => $id) {
 
       case 'work':
         $row['title']=$_POST['title'][$key];
+        $row['time']=$_POST['time'][$key];
         $row['content']=$_POST['content'][$key];
         $row['sh']=(isset($_POST['sh']) && in_array($id,$_POST['sh'])) ? 1 : 0;
       break;
