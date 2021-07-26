@@ -5,41 +5,65 @@ body{
 form {
   font-family: 'Overpass', sans-serif;
 }
-header{
-  background-color: #faf;
-}
 
-a.nav-link{
-  text-align: center;
-  
-}
-a.nav-link:hover{
-  background-color: #139be95b;
-
-}
 h1.title{
-  font-size: 24px;
-
-  
+  font-family: 'Fredoka One', cursive;
+  color: #1488cc;
 }
+span.word{
+  float: right;
+}
+div.container.nav{
+  margin: auto;
+  align-items: center;
+}
+
+div.container.nav a{
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  color: black;
+  padding: 0px;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 8px;
+  margin-left: 4px;
+ 
+}
+div.container.nav a:hover{
+  color: #1488cc;
+  background-color: #f8f9fa;
+  border-radius: 3px;
+}
+
 .wrap{
   background-color: #fff;
 }
 ul li{
   list-style: none;
 }
+/* 下拉選單 */
+ul.dropdown-menu.show {
+  padding: 0px !important;
+  margin: 0px  !important;
+}
+a.dropdown-item{
+  padding: 5px !important; 
+  margin: 0 !important;
+}
+
 
 /* header navbar */
 .logoutBtn{
   font-size: 10px;
-  /* background-color: #1488cc ; */
+  background-color: #1488cc;
   border: 1px solid #1488cc;
-  color: #1488cc;
+  color: #fff;
+  border-radius: 3px;
 }
 .logoutBtn:hover{
-  background-color:#1488cc ;
-  border: none;
-  color:  #fff;
+  background-color: #fff;
+  color:  #1488cc;
 }
 .printBtn{
   border: 1px solid #1489ccab;

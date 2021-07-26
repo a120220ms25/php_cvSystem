@@ -65,6 +65,12 @@ switch($table){
     $Education->save(['title'=>$title,'content'=>$content]);
   break;
 
+  case 'basic':
+    $title=$_POST['title'];
+    $content=$_POST['content'];
+    $Basic->save(['title'=>$title,'content'=>$content]);
+  break;
+
 
   default: 
 

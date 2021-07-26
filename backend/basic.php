@@ -7,7 +7,7 @@
           <table class="w-100 table cent auto ">
             <thead>
               <tr>
-                <th>聯絡方式</th>
+                <th>基本資料</th>
                 <th>內容</th>
                 <th>顯示</th>
                 <th>刪除</th>  
@@ -16,7 +16,7 @@
             <tbody>
               <div class="table-title">
               <?php
-                $rows=$Contact->all();
+                $rows=$Basic->all();
                 foreach($rows as $key=> $value){
                   ?>
               </div>

@@ -80,4 +80,38 @@
  
 }
 
+/* WORK */
+.work h4 { 
+  margin-bottom:17px;
+}
 
+.year, .arr, .point, .data {
+  display:inline-block;
+}
+
+
+.data {
+  /* width: 438px; */
+  border-left: solid 3px #E3C9CD;
+}
+.work h6 {
+  font-size:14px; 
+  line-height:24px;
+}
+.point {
+  margin-right:15px;
+  margin-left:-6px;
+  width: 9px;
+  height: 9px;
+  line-height:24px;
+  vertical-align:middle;
+  border-radius:100%;
+  background-color:#513842;
+}
+.work p {
+  margin-left:18px;
+  font-size:12px;
+}
+.work{
+  width: 520px;
+}
