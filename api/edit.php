@@ -5,6 +5,12 @@ $table = $_POST['table'];
 
 $db = new DB($table);
 
+
+
+
+
+
+
 foreach ($ids as $key => $id) {
   
   // 看del陣列有沒有存在 裡面的id是要刪除的資料
@@ -41,8 +47,12 @@ foreach ($ids as $key => $id) {
       case 'project':
         $row['title']=$_POST['title'][$key];
         $row['content']=$_POST['content'][$key];
+        $row['gitlink']=$_POST['gitlink'][$key];
+        $row['demolink']=$_POST['demolink'][$key];
         $row['sh']=(isset($_POST['sh']) && in_array($id,$_POST['sh'])) ? 1 : 0;
-      break;
+       
+        
+        break;
 
       case 'work':
         $row['title']=$_POST['title'][$key];
@@ -53,6 +63,7 @@ foreach ($ids as $key => $id) {
 
       case 'education':
         $row['title']=$_POST['title'][$key];
+        $row['english']=$_POST['english'][$key];
         $row['content']=$_POST['content'][$key];
         $row['sh']=(isset($_POST['sh']) && in_array($id,$_POST['sh'])) ? 1 : 0;
       break;

@@ -9,6 +9,7 @@ move_uploaded_file($_FILES['photo']['tmp_name'],"../img/".$_FILES['photo']['name
 $data['photo']=$_FILES['photo']['name'];
 }
 
+
 if(isset($_FILES['img01'])){
   // 把檔案移動到指定資料夾  然後把檔案存到資料庫
 move_uploaded_file($_FILES['img01']['tmp_name'],"../img01/".$_FILES['img01']['name']);
@@ -48,9 +49,11 @@ switch($table){
   case 'project':
     $title=$_POST['title'];
     $content=$_POST['content'];
+    $gitlink=$_POST['gitlink'];
+    $demolink=$_POST['demolink'];
     $img01 = $data2['img01'];
     $img02 = $data2['img02'];
-    $Project->save(['title'=>$title,'content'=>$content,'img01'=>$img01,'img02'=>$img02]);
+    $Project->save(['title'=>$title,'content'=>$content,'img01'=>$img01,'img02'=>$img02,'gitlink'=>$gitlink,'demolink'=>$demolink]);
   break;
 
   case 'work':
@@ -63,7 +66,8 @@ switch($table){
   case 'education':
     $title=$_POST['title'];
     $content=$_POST['content'];
-    $Education->save(['title'=>$title,'content'=>$content]);
+    $english=$_POST['english'];
+    $Education->save(['title'=>$title,'content'=>$content,'english'=>$english]);
   break;
 
   case 'basic':

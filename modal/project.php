@@ -10,6 +10,14 @@
         <td class="fs-6 " ><input type="text" name="title"></td>
     </tr>
     <tr>
+        <td class="fs-6" style="text-align:right">gitHub連結網址：</td>
+        <td class="fs-6 " ><input type="text" name="gitlink"></td>
+    </tr>
+    <tr>
+        <td class="fs-6" style="text-align:right">Demo連結網址：</td>
+        <td class="fs-6 " ><input type="text" name="demolink"></td>
+    </tr>
+    <tr>
         <td class="fs-6" style="text-align:right">內容說明：</td>
         <td><textarea name="content" id="" cols="30" rows="5"></textarea></td>
     </tr>

@@ -61,7 +61,7 @@
           <span class=""><a href="./backend.php?do=project">作品集</a></span>
           <span class=""><a href="./backend.php?do=work">工作經歷</a></span>
           <span class=""><a href="./backend.php?do=education">學歷</a></span>
-          <span class=""><a href="cv_view.php">預覽</a></span>
+          <span class=""><a target="_blank" href="cv_view.php">預覽</a></span>
       </div>
     </div>
   </div>

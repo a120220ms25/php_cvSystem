@@ -11,7 +11,7 @@
     </tr>
     <tr>
         <td class="fs-6" style="text-align:right">年份：</td>
-        <td class="fs-6"><input type="text" name="content"></td>
+        <td class="fs-6 " ><input type="text" name="english"></td>
     </tr>
 </table>
 <div class="cent">

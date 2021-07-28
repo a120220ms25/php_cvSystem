@@ -7,10 +7,10 @@
           <table class="w-100 table cent auto ">
             <thead>
               <tr>
-                <th  width="40%">學校名稱/科系</th>
+                <th  width="30%">學校名稱/科系</th>
                 <th  width="30%">年份</th>
-                <th  width="15%">顯示</th>
-                <th  width="15%">刪除</th>  
+                <th  width="10%">顯示</th>
+                <th  width="10%">刪除</th>  
               </tr>
             </thead>
             <tbody>
@@ -25,7 +25,7 @@
                     <input class="w-100" type="text" name='title[]' value="<?=$value['title'];?>">
                     </td>
                     <td>
-                    <input class="w-100" type="text" name='content[]' value="<?=$value['content'];?>">
+                    <input class="w-100" type="text" name='english[]' value="<?=$value['english'];?>">
                     </td>
                     <td>
                       <input type="checkbox" name="sh[]" value="<?=$value['id'];?>" <?=$value['sh']==1?"checked":"";?>>

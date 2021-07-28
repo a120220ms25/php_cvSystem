@@ -6,10 +6,10 @@ _<?php include_once '../base.php';
 if(isset($_POST['text2'])){
     foreach($_POST['text2'] as $key => $text){
         if(!empty($text)){
-            $new['title']=$text;
+            $new['content']=$text;
             $new['sh']=1;
             $new['parent']=$_POST['parent'];
-            $Skills->save($new);
+            $Project->save($new);
         }
     }
 }
@@ -18,16 +18,20 @@ if(isset($_POST['text2'])){
 if(isset($_POST['text'])){
     foreach ($_POST['id'] as $key => $id) {
         if(isset($_POST['del']) && in_array($id,$_POST['del'])){
-            $Skills->del($id);
+            $Project->del($id);
         }else{
-            $row=$Skills->find($id);
-            $row['title']=$_POST['text'][$key];
+            $row=$Project->find($id);
+            print_r ($row);
+            
+            $row['content']=$_POST['text'][$key];
+            // print_r ($_POST['text'][$key]);
+            // print_r ($row['content']);
             // $row['href']=$_POST['href'][$key];
-            $Skills->save($row);
+            $Project->save($row);
         }
     }
 }
 
 
-to("../backend.php?do=skills");
+to("../backend.php?do=project");
 ?>
