@@ -13,10 +13,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
   <script src="./js/jquery-1.9.1.min.js"></script>
   <script src="./js/js.js"></script>
   <link rel="stylesheet" href="./css/css.css">
   <link rel="stylesheet" href="./css/back.css">
+  <link rel="shortcut icon" href="./logo.ico" type="image/x-icon">
   <title>Resume System</title>
 </head>
 
@@ -27,7 +29,7 @@
       <div class="container ">
         <div class="row align-items-center">
           <div class="col p-0">
-            <h1 class="title fs-4 m-0">ResumeSystem</h1>
+           <h1 class="d-inline-block title fs-4 m-0"><a href="#">CV System</a></h1>
           </div>
           <div class="col">
             <span class="word " target="balnk" href="https://github.com/a120220ms25">Hello!
@@ -43,7 +45,7 @@
   <div class="section pt-2">
     <div class="container nav p-0 justify-content-center">
       <div class="navbar">
-        <span class=" "><a href="./backend.php?do=all">All</a></span>
+        <span class=" "><a href="./backend.php?do=all">Welcome</a></span>
           <span class=" dropdown">
               <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                 data-bs-toggle="dropdown" aria-expanded="false">

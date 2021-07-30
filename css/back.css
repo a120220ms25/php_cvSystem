@@ -6,9 +6,10 @@ form {
   font-family: 'Overpass', sans-serif;
 }
 
-h1.title{
+h1 a{
   font-family: 'Fredoka One', cursive;
   color: #1488cc;
+  text-decoration: none;
 }
 span.word{
   float: right;

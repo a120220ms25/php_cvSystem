@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./logo.ico" type="image/x-icon">
   <title>Resume</title>
   <style>
     function print(){
@@ -27,10 +28,10 @@
     <div class="section p-3">
       <div class="container ">
         <div class="row align-items-center">
-          <div class="col p-0">
-            <h1 class="title fs-4 m-0">ResumeSystem</h1>
+          <div class="header-title col p-0">     
+          <h1 class="d-inline-block title fs-4 m-0"><a href="#">CV System</a></h1>
           </div>
-          <div class="col">
+          <div class="header-content col">
             <span class="word ">Hello!
               <?= $_SESSION['account']?>
               <a class="logoutBtn btn ms-2" href="./?do=login">Logout</a>        
@@ -134,14 +135,14 @@
 
       <!-- project -->
       <div class="row section p-3 mb-3 pt-0">
-        <div class="col-12 ">
+        <div class="col-12">
           <h2 class="subSt mb-2 fs-3">Project<span class="color01"></span></h2>
           <?php
             $rows=$Project->all(['sh'=>1,'parent'=>0]);
             foreach ($rows as $key => $value) {
                 ?>
         </div>
-        <div class="col-lg-4 py-2 mb-4 ">
+        <div class="col-lg-4 py-2 mb-lg-4 ">
           <h2 class="d-inline-block fs-4"><?=$value['title']?></h2>
           <div class="linkGroup d-inline-block ">
           <a class="link fs-5" href="<?=$value['gitlink']?>"  target="_blank" >&nbsp;<i class="fab fa-github"></i></a>
@@ -159,11 +160,11 @@
               ?>
           </div>
          
-          <p><?=$value['content']?></p>
+          <p class="mb-1 mb-lg-3"><?=$value['content']?></p>
         </div>
 
-        <div class="col-lg-8 row m-0 ">
-          <div class="col-lg-6 p-3" >
+        <div class="project-img col-lg-8 row m-0 ">
+          <div class="col-lg-6 p-lg-3" >
             <img class="py-2 cover w-100  "
               src="img01/<?=$value['img01'];?>"  alt=""  style="height:250px">
           </div>
@@ -212,7 +213,7 @@
           <div class="col-12 work-list row"> 
             <div class="col-lg-12 even ">
               <div class="data">
-                <h6 class="fw-bold">
+                <h6>
                   <div class="point"></div><?=$value['title']?>
                 </h6>
                 <p class="experienceContent p-2 m-0 ms-2 mb-2"><?=$value['english']?></p>

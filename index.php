@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/css.css">
     <script src="./js/jquery-1.9.1.min.js"></script>
     <script src="./js/js.js"></script>
+    <link rel="shortcut icon" href="./logo.ico" type="image/x-icon">
     <title>loginPage</title>
   </head>
   <body>
