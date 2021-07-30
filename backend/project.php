@@ -3,7 +3,7 @@
     <p class="col-lg-1 titleString fs-6 p-3 fw-bold mb-0"><?=$ts[$do]?>
         <span class="color01"></span>
     </p>
-    <form class="col-lg-11" method="post" action="api/edit.php" enctype="multipart/form-data">
+    <form class="col-lg-11" method="post" action="api/edit.php" enctype="multipart/form-data" autocomplete="off">
               <table class="w-100 table cent auto ">
                 <thead>
                   <tr>

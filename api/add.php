@@ -95,6 +95,6 @@ switch($table){
 
 
 
-to("../backend.php?do=$table");
+// to("../backend.php?do=$table");
 
 

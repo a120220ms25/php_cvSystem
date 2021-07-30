@@ -6,7 +6,7 @@
 
         <div class="form col-10 row">
             <!-- 表單name -->
-            <form class="col-lg-12 p-3 form-group" method="post" action="api/add.php">
+            <form class="col-lg-12 p-3 form-group" method="post" action="api/add.php" autocomplete="off">
               <div class="name d-flex align-items-center">
                 <label for="name" ><span>姓名:&nbsp;</span></label>
                 <input id="name" class="form-control" type="text" name="name" value="<?=$About->find(1)['name']?>">

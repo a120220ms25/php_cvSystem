@@ -53,10 +53,17 @@
         .login{
           float: right;
         }
+        .body{
+        font-family: 'Ubuntu', sans-serif;
+        background-image: url('./bg/bg_blue.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        }
     </style>
     <title>signUpPage</title>
   </head>
-  <body>
+  <body >
     
           <div class="wrap d-flex justify-content-center py-1 ">
             <div class="row wrap-content w-75 justify-content-center p-0 m-0">
@@ -69,7 +76,7 @@
                 <h1 class="fs-3 fw-bold text-center">User SignUp</h1>
                 <div class="account mb-4 fs-6 text-center">Please input to your account</div>
 
-                  <form class="text-lg-start mb-5" method="POST" action="./api/edit_member.php">
+                  <form class="text-lg-start mb-5" method="POST" action="./api/edit_member.php" autocomplete="off">
                     <div class="mb-2">
                       <label for="exampleInputEmail1" class="form-label">Account</label>
                       <input name="account" type="text" class="form-control w-100" id="exampleInputAccount">

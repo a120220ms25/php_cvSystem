@@ -1,6 +1,6 @@
 <?php 
 session_start();
-date_default_timezone_set("Asia/Taipei");
+// date_default_timezone_set("Asia/Taipei");
 
 
 $ts=['photo'=>"關於我<br>照片管理",
@@ -29,9 +29,9 @@ $hs=['photo'=>"請選擇照片",
 
 
 class DB{
-  private $dsn="mysql:host=localhost;charset=utf8;dbname=db_cv";
-  private $root='root';
-  private $password='';
+  private $dsn="mysql:host=localhost;charset=utf8;dbname=s1100218";
+  private $root='s1100218';
+  private $password='s1100218';
   private $table;
   private $pdo;
 
@@ -195,6 +195,7 @@ $Education = new DB("education");
 $Introduction = new DB("introduction");
 $Contact = new DB("contact");
 $Basic = new DB("basic");
+
 
 
 ?>
