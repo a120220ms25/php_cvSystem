@@ -19,7 +19,7 @@
   <body>
     <div class="body login-bg">
       <div class="bg-filter align-items-center justify-content-center row align-content-center  m-0 h-100">
-          <h1 class="title fs-3 fs-md-1 text-center text-light fw-bold mt-2">Welcome to the resume system <small class="fs-6 text-center text-light d-block mb-2"> Please login or register first</small></h1>
+          <h1 class="title fs-3 fs-md-1 text-center text-light fw-bold mt-2">Welcome to the CV System <small class="fs-6 text-center text-light d-block mb-2"> Please login or register first</small></h1>
             <?php
               $do = (isset($_GET['do'])) ? $_GET['do'] : 'login';
               $file = "".$do.".php";     				

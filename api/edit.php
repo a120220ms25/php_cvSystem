@@ -6,11 +6,6 @@ $table = $_POST['table'];
 $db = new DB($table);
 
 
-
-
-
-
-
 foreach ($ids as $key => $id) {
   
   // 看del陣列有沒有存在 裡面的id是要刪除的資料

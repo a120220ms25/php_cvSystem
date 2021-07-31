@@ -1,4 +1,4 @@
-_<?php include_once '../base.php';
+<?php include_once '../base.php';
 
 $db= new DB($_POST['table']);
 $table = $_POST['table'];
@@ -13,13 +13,13 @@ $data['photo']=$_FILES['photo']['name'];
 if(isset($_FILES['img01'])){
   // 把檔案移動到指定資料夾  然後把檔案存到資料庫
 move_uploaded_file($_FILES['img01']['tmp_name'],"../img01/".$_FILES['img01']['name']);
-$data2['img01']=$_FILES['img01']['name'];
+$data['img01']=$_FILES['img01']['name'];
 }
 
 if(isset($_FILES['img02'])){
   // 把檔案移動到指定資料夾  然後把檔案存到資料庫
 move_uploaded_file($_FILES['img02']['tmp_name'],"../img02/".$_FILES['img02']['name']);
-$data2['img02']=$_FILES['img02']['name'];
+$data['img02']=$_FILES['img02']['name'];
 }
 
 
@@ -40,6 +40,7 @@ switch($table){
     $title=$_POST['title'];
     $content=$_POST['content'];
     $Contact->save(['title'=>$title,'content'=>$content]);
+  
   break;
 
   case 'skills':
@@ -51,9 +52,12 @@ switch($table){
     $content=$_POST['content'];
     $gitlink=$_POST['gitlink'];
     $demolink=$_POST['demolink'];
-    $img01 = $data2['img01'];
-    $img02 = $data2['img02'];
+    $img01 = $data['img01'];
+    $img02 = $data['img02'];
+    
     $Project->save(['title'=>$title,'content'=>$content,'img01'=>$img01,'img02'=>$img02,'gitlink'=>$gitlink,'demolink'=>$demolink]);
+    
+  
   break;
 
   case 'work':
@@ -78,12 +82,13 @@ switch($table){
 
 
   default: 
+  $db->save($data);
 
  
 }
 
 
- $db->save($data);
+
 
 // if(isset($_FILES['photo'])){
 //   // 把檔案移動到指定資料夾  然後把檔案存到資料庫

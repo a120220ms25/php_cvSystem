@@ -172,7 +172,7 @@ public function save($arr){
                               
   }
   //exec  return 1/0
-  // echo $sql;
+  echo $sql;
   return $this->pdo->exec($sql); 
 }
 
