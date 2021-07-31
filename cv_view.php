@@ -113,7 +113,7 @@
           <h2 class="subSt mb-2 fs-3">Skills<span class="color01"></span></h2>
         
           <?php
-            $rows=$Skills->all(['parent'=>0]);
+            $rows=$Skills->all(['parent'=>0,'sh'=>1]);
             foreach ($rows as $key => $value) {
                 ?>
         </div>
@@ -138,7 +138,7 @@
         <div class="col-12">
           <h2 class="subSt mb-2 fs-3">Project<span class="color01"></span></h2>
           <?php
-            $rows=$Project->all(['sh'=>1,'parent'=>0]);
+            $rows=$Project->all(['parent'=>0,'sh'=>1]);
             foreach ($rows as $key => $value) {
                 ?>
         </div>
@@ -181,7 +181,7 @@
       
       <!-- work experience-->   
       <div class="row section p-3 mb-3 mx-0 pt-0 ">
-       <div class="col-lg-4 workSection mb-3 ">
+       <div class="col-lg-7 workSection mb-3 ">
             <div class="col-12 mb-2 ">
               <h2 class="subSt mb-2 pb-3 fs-3">Work Experience<span class="color01"></span></h2>
               <?php
@@ -202,7 +202,7 @@
             </div>
         </div>
         <!-- education -->
-        <div class="col-lg-8">
+        <div class="col-lg-5">
         <div class="col-12 ">
           <h2 class="subSt pb-3 mb-2 fs-3">Education / Refresher course <span class="color01"></span></h2>
           <?php

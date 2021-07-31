@@ -44,9 +44,7 @@ span.word{
 }
 
 /* WORK */
-.data h6{
-  font-size: 12px;
-}
+
 .work h4 { 
   margin-bottom:17px;
 }
@@ -79,9 +77,7 @@ span.word{
 .work{
   width: 520px;
 }
-.experienceContent{
-  font-size: 10px;
-}
+
 .color01{
   top: 0px;
   left: 8px;

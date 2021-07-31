@@ -1,5 +1,5 @@
 
-_<?php include_once '../base.php';
+<?php include_once '../base.php';
 
 
 //新增新資料 text2
@@ -33,5 +33,5 @@ if(isset($_POST['text'])){
 }
 
 
-to("../backend.php?do=project");
+// to("../backend.php?do=project");
 ?>
