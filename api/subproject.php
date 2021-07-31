@@ -33,5 +33,5 @@ if(isset($_POST['text'])){
 }
 
 
-// to("../backend.php?do=project");
+to("../backend.php?do=project");
 ?>
