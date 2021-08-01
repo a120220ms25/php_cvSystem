@@ -130,8 +130,8 @@ a.link{
     display: none;
   }
   .skill{
-    /* display: inline-block; */
-    float: right;
+    display: inline;
+  
   }
 }
 .resumePage{
